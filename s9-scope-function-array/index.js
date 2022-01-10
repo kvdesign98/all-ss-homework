@@ -72,14 +72,15 @@ if (dangNhap == "Admin") {
     if (matKhau == "cafedev") {
         alert("Chào Mừng")
     }
+    else if (matKhau === "" || matKhau === null) {
+        alert("Đã hủy")
+    }
     else if (matKhau != "cafedev") {
         alert("Mật khẩu sai")
     }
-    else if (matKhau === "" || matKhau ===null) {
-        alert("Đã hủy")
-    }
+    
 }
-else if (dangNhap ==="" ||dangNhap ===null ) {
+else if (dangNhap ==="" ||dangNhap === null ) {
     alert("Canceled")
 }
 else {
