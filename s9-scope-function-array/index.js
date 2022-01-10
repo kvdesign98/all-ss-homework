@@ -1,24 +1,15 @@
 // W1
-function tuoi(old) {
-    if (old) {
-        if (old > 18) {
-            old = true;
-            alert(old);
-        }
-        else {
-            old = false;
-            alert(old);
-        }
-    }
-    else {
-        alert("không có tuổi được nhập vào")
-    }
-    return old;
+function tuoi(old){
+    if(old)
+    return old > 18
+    else
+    alert("không có tuổi được nhập vào")
+    return
 }
 
 
 function tuoi(old) {
-    return old > 18 ? alert(old = true) : alert(old = false)
+    return old > 18 ? true : false
 }
 
 
@@ -30,25 +21,17 @@ function checkAge(age) {
     }
 }
 function checkAge(age) {
-    return age > 18 ? alert(age = true) : alert('Did parents allow you?')
+    return age > 18 ? true : 'Did parents allow you?'
 }
 function checkAge(age) {
     return age > 18|| confirm('Did parents allow you?')
 }
 // W2
 function min(a, b) {
-    if (a, b) {
-        if (a < b || b < a) {
-            if (a < b) {
-                console.log(a)
-            } else if (b < a) {
-                console.log(b)
-            }
-        }
-    }
-    else {
-        alert("Không có a,b")
-    }
+if(a,b)
+return a<b?a:b;
+else
+alert ("sai giá trị")
 }
 
 // W3
