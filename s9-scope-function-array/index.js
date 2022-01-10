@@ -1,55 +1,68 @@
 // W1
-function tuoi(old){
-    let old=true;
-    if(old>18){
-        old=true;
-        console.log(old);
+function tuoi(old) {
+    if (old) {
+        if (old > 18) {
+            old = true;
+            alert(old);
+        }
+        else {
+            old = false;
+            alert(old);
+        }
     }
-    else{
-        old=false;
-        console.log(old);
+    else {
+        alert("không có tuổi được nhập vào")
     }
-
-    old = (old>18)?console.log(old=true):console.log(old=false)
     return old;
 }
 
+
+function tuoi(old) {
+    return old = (old > 18) ? console.log(old = true) : console.log(old = false)
+}
+
+
 function checkAge(age) {
     if (age > 18) {
-      return true;
+        return true;
     } else {
-      return confirm('Did parents allow you?');
+        return confirm('Did parents allow you?');
     }
-// ?
-    age=(age>18)?console.log(age=true):console.log('Did parents allow you?')
-// or ||
-    age=(age>18);alert(age=true)||alert('Did parents allow you?')
-
-    return age;
+}
+function checkAge(age) {
+    age = (age > 18) ? alert(age = true) : alert('Did parents allow you?')
+}
+function checkAge(age) {
+    age = (age > 18); alert(age = true) || alert('Did parents allow you?')
 }
 
 // W2
-function min(a,b){
-    if(a<b||b<a){
-        if(a<b){
-            console.log(a)
-        }else{
-            console.log(b)
+function min(a, b) {
+    if (a, b) {
+        if (a < b || b < a) {
+            if (a < b) {
+                console.log(a)
+            } else {
+                console.log(b)
+            }
         }
+    }
+    else {
+        alert("Không có a,b")
     }
 }
 
 // W3
-ask=(question, yes, no)=> {
+ask = (question, yes, no) => {
     if (confirm(question)) yes()
     else no();
-  }
+}
 
-  ask(
+ask(
     "Do you agree?",
     () => { alert("You agreed."); },
     () => { alert("You canceled the execution."); }
-  );
+);
 
 // W4
 
@@ -63,11 +76,11 @@ if (dangNhap == "Admin") {
     else if (matKhau != "cafedev") {
         alert("Mật khẩu sai")
     }
-    else if (matKhau ==""||"esc") {
+    else if (matKhau == "" || "esc") {
         alert("Đã hủy")
     }
 }
-else if (dangNhap ==""||"esc") {
+else if (dangNhap == "" || "esc") {
     alert("Canceled")
 }
 else {
