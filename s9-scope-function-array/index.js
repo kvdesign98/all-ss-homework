@@ -18,7 +18,7 @@ function tuoi(old) {
 
 
 function tuoi(old) {
-    return old = (old > 18) ? console.log(old = true) : console.log(old = false)
+    return old = (old > 18) ? alert(old = true) : alert(old = false)
 }
 
 
@@ -30,12 +30,11 @@ function checkAge(age) {
     }
 }
 function checkAge(age) {
-    age = (age > 18) ? alert(age = true) : alert('Did parents allow you?')
+    return age = (age > 18) ? alert(age = true) : alert('Did parents allow you?')
 }
 function checkAge(age) {
-    age = (age > 18); alert(age = true) || alert('Did parents allow you?')
+    return age = (age > 18)|| confirm('Did parents allow you?')
 }
-
 // W2
 function min(a, b) {
     if (a, b) {
