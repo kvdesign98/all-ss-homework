@@ -18,7 +18,7 @@ function tuoi(old) {
 
 
 function tuoi(old) {
-    return old = (old > 18) ? alert(old = true) : alert(old = false)
+    return old > 18 ? alert(old = true) : alert(old = false)
 }
 
 
@@ -30,10 +30,10 @@ function checkAge(age) {
     }
 }
 function checkAge(age) {
-    return age = (age > 18) ? alert(age = true) : alert('Did parents allow you?')
+    return age > 18 ? alert(age = true) : alert('Did parents allow you?')
 }
 function checkAge(age) {
-    return age = (age > 18)|| confirm('Did parents allow you?')
+    return age > 18|| confirm('Did parents allow you?')
 }
 // W2
 function min(a, b) {
@@ -75,11 +75,11 @@ if (dangNhap == "Admin") {
     else if (matKhau != "cafedev") {
         alert("Mật khẩu sai")
     }
-    else if (matKhau == "" || "esc") {
+    else if (matKhau === "" || matKhau ===null) {
         alert("Đã hủy")
     }
 }
-else if (dangNhap == "" || "esc") {
+else if (dangNhap ==="" ||dangNhap ===null ) {
     alert("Canceled")
 }
 else {
