@@ -41,7 +41,7 @@ function min(a, b) {
         if (a < b || b < a) {
             if (a < b) {
                 console.log(a)
-            } else {
+            } else if (b < a) {
                 console.log(b)
             }
         }
