@@ -1,10 +1,12 @@
 // W1
-function tuoi(old){
-    if(old)
-    return old > 18
-    else
-    alert("không có tuổi được nhập vào")
-    return
+function tuoi(old) {
+    if (old) {
+        return old > 18
+    }
+    else {
+        alert("không có tuổi được nhập vào")
+        return
+    }
 }
 
 
@@ -24,14 +26,16 @@ function checkAge(age) {
     return age > 18 ? true : 'Did parents allow you?'
 }
 function checkAge(age) {
-    return age > 18|| confirm('Did parents allow you?')
+    return age > 18 || confirm('Did parents allow you?')
 }
 // W2
 function min(a, b) {
-if(a,b)
-return a<b?a:b;
-else
-alert ("sai giá trị")
+    if (a, b) {
+        return a < b ? a : b;
+    }
+    else {
+        alert("sai giá trị")
+    }
 }
 
 // W3
@@ -61,9 +65,9 @@ if (dangNhap == "Admin") {
     else if (matKhau != "cafedev") {
         alert("Mật khẩu sai")
     }
-    
+
 }
-else if (dangNhap ==="" ||dangNhap === null ) {
+else if (dangNhap === "" || dangNhap === null) {
     alert("Canceled")
 }
 else {
