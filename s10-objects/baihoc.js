@@ -58,7 +58,7 @@ obj.sayHello1()
 //lấy keys values arr obj
 console.log(Object.keys(obj))//lấy toàn bộ keys
 console.log(Object.values(obj))//lấy toàn bộ values
-console.log(Object.entries(obj))//lấy teo cặp
+console.log(Object.entries(obj))//lấy theo cặp
 
 for(let i = 0; i < Object.keys(obj).length; i++){
 }
