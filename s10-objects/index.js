@@ -13,9 +13,11 @@ let obj = {
     a: 1,
     c: 3,
 };
-let objKeys = Object.keys(obj);
-let upperKeys = objKeys.map((key) => key.toUpperCase());
-console.log(upperKeys);
+let A = Object.keys(obj);
+for (let i in A) {
+    A[i]=A[i].toUpperCase()
+}
+console.log(A)
 HW3
 let myFamily = {
     quantity: 4,
