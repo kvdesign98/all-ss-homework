@@ -18,7 +18,7 @@ function add() {
     let performer = prompt("Người thực hiện");
     const li = document.createElement("li")
     const p = document.createElement("span")
-    p.innerHTML = `Tên: ${ten} OO Deadline: ${deadline} OO Người thực hiện: ${performer}`
+    p.innerHTML = `Tên: ${ten} ; Deadline: ${deadline} ; Người thực hiện: ${performer}.`
     
     p.dataset.status = "new";
     const btn = document.createElement("button")
