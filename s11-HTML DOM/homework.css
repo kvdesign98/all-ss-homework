@@ -1,0 +1,38 @@
+#container
+{
+    background-color: yellow;
+    text-align: center;
+    border: 2px solid #000000;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: auto;
+    right: auto;
+    border-radius: 50px;
+}
+body
+{
+    background-color:aqua
+}
+.title
+{
+    color: rgb(255, 10, 132);
+    margin-left: 40%;
+    margin-right: 40%;
+    border-bottom: 2px solid #000000;
+    border-radius: 50px;
+
+}
+ul 
+{
+     list-style-type: none; 
+}
+span
+{
+        font-size: 25px;
+}
+button{
+    background-color: rgb(162, 247, 247);
+    color:rgb(113, 103, 250);
+    font-size: 20px;
+    border-radius: 50px;
+}

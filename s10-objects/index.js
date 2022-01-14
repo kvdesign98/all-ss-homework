@@ -24,8 +24,26 @@ let myFamily = {
     member: ["Dad", "Mom", "Me", "Daughter"],
     location: "Vietnam",
 };
-let family =Object.entries(myFamily)
-console.log(family)
+function myFamily(){
+    this.quantity ="";
+    this.member = "";
+    this.location = "";
+  
+    this.showInfo = function(){
+      document.write("Nhà có:" + this.quantity + "<br/>");
+      document.write("Gồm:" + this.member + "<br/>");
+      document.write("Hiện đang ở:" + this.location + "<br/>");
+    };
+  };
+  
+  let family = new myFamily();
+  
+  family.quantity = "5";
+  family.member = ["Bố" , "Mẹ" , "Anh", "Chị" , "Tôi"];
+  family.location = "HCM";
+  
+  family.showInfo();
+  
 HW4
 let obj = {
     foo: { a: "hello", b: "world" },
