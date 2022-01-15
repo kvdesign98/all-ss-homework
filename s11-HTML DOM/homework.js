@@ -13,12 +13,12 @@ const processing_status_color_code = "red";
 
 
 function add() {
-    let ten = prompt("nhập tên")
-    let deadline = prompt("tên deadline")
+    let ten = prompt("Nhập tên")
+    let deadline = prompt("Tên deadline")
     let performer = prompt("Người thực hiện");
     const li = document.createElement("li")
     const p = document.createElement("span")
-    p.innerHTML = `Tên: ${ten} ; Deadline: ${deadline} ; Người thực hiện: ${performer}.`
+    p.innerHTML = `Tên: ${ten} | Deadline: ${deadline} | Người thực hiện: ${performer}.`
     
     p.dataset.status = "new";
     const btn = document.createElement("button")
@@ -26,14 +26,31 @@ function add() {
     const changeStatusBtn = document.createElement("button")
     changeStatusBtn.innerHTML = "Status";
     const remove1=document.createElement("button")
-    remove1.innerHTML="Xóa"
+    remove1.innerHTML="Delete"
+    const detail= document.createElement("button")
+    detail.innerHTML="Detail"
     li.appendChild(p)
+    li.appendChild(detail)
     li.appendChild(btn)
     li.appendChild(changeStatusBtn)
     li.appendChild(remove1)
 
+    detail.onclick = function(){
+        let text=prompt("Detail")
+        const span = document.createElement("span")
+        span.innerHTML= "Detail:" + text 
+        const remove=document.createElement("button")
+        remove.innerHTML="Delete"
+        li.appendChild(span);
+        li.appendChild(remove);
+        remove.onclick = function(){
+            li.removeChild(span);
+            li.removeChild(remove);
+        }
+    }
+
     remove1.onclick = function(){
-            list.removeChild(li);
+        list.removeChild(li);
     }
 
     btn.onclick = function () {
