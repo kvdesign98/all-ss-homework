@@ -7,10 +7,37 @@
     <title>baihoc</title>
 </head>
 <body>
+    <button onclick="this.innerHTML='Clicked'">Click Me</button>
+    <button id="btnClickMe2">Click Me 2 </button>
+    <button id="btnClickMe3">Click Me 3 </button>
 
 
+    <div id="outer">
+        Outer
+        <div onclick="console.log('inner')">
+            Inner
+            <button onclick="console.log('clickme 4')">Click Me 4</button> 
+        </div>
+    </div>
 
-    
+<div>
+   <ul id="todolist">
+       <li >woking</li>
+       <li >jogging</li>
+       <li >Shopping</li>
+   </ul>
+</div>
+
+<form id="myForm">
+    <input type="text"/>
+    <input type="text"/>
+    <input type="radio"/>
+    <input type="checkbox"/>
+</form>
+
     <script src="baihocS12.js"></script>
 </body>
 </html>
+
+
+
