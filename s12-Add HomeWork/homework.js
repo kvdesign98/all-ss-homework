@@ -9,7 +9,7 @@ submit.addEventListener("click", function () {
         if (email.value === "") {
             alert("Error email")
         }
-        if (!filter.test(email.value)) {
+        else if (email.value !== filter) {
             errorText.innerHTML = "Sai kiểu dữ liệu"
             errorText.style.color = "red"
         }
